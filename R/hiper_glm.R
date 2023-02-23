@@ -19,5 +19,3 @@ hiper_glm <- function(design, outcome, model = 'linear', method = "BFGS") {
   }
   return(hglm_out)
 }
-
-
