@@ -1,4 +1,4 @@
-source("./tests/testthat/helper.R")
+# source("./tests/testthat/helper.R")
 test_that("all-are-close returns TRUE when inputs are close", {
   v = rep(100, 100)
   w = v + 1e-8
