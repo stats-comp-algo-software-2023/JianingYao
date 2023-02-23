@@ -7,7 +7,6 @@ hiper_glm <- function(design, outcome, model = 'linear', method = "BFGS") {
   if (model == 'linear') {
     hglm_out <- list()
     class(hglm_out) <- 'hglm'
-    return(hglm_out)
     if (method == "pinv") {
       hglm_out$coef <- lm_mle_pinv(design, outcome)
     }
@@ -18,6 +17,7 @@ hiper_glm <- function(design, outcome, model = 'linear', method = "BFGS") {
   else {
     warning("The function is yet to be implemented.")
   }
+  return(hglm_out)
 }
 
 
