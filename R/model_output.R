@@ -2,7 +2,7 @@
 coef.hglm <- function(hglm_out){
   # warning("The function is yet to be implemented.")
   coef <- hglm_out$coef
-  cat(paste0("The coefficients are", coef))
+  # cat(paste0("The coefficients are", coef))
   return(coef)
 }
 
